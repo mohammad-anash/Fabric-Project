@@ -44,3 +44,32 @@ $(document).ready(() => {
     }
   });
 });
+
+function createRow(totalColumns, columnType, classList, targetParent) {
+  try {
+    for (let i = 0; i < totalColumns; i++) {
+      const createElement = createColumn(columnType);
+      if (!!classList) {
+        createElement.addClass(classList);
+      }
+      targetParent.append(createElement);
+    }
+  } catch (err) {
+    alert(err.message);
+  }
+}
+
+function createColumn(columnType) {
+  switch (columnType) {
+    case "li":
+      return $("<li>");
+    case "ul":
+      return $("<ul>");
+    case "input":
+      return $("<input>");
+    case "div":
+      return $("<div>");
+    default:
+      throw Error("invalid column");
+  }
+}
