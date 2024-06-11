@@ -8,7 +8,12 @@ function getColumnInfo(event) {
 $(document).ready(() => {
   $("body").on("focusout", (event) => {
     const columnInfo = getColumnInfo(event);
-    console.log(columnInfo);
+    if(event.target.getAttribute("data-index") === "4"){
+      const itemRate = Number(event.target.value);
+      const itemPice = $(event.target).prev();
+
+      console.log(itemRate, itemPice)
+    }
   });
 
   $("body").on("keydown", (event) => {
@@ -22,7 +27,6 @@ $(document).ready(() => {
         if (isNumber) {
           columnInfo.currentColumn.value += currentValue;
         }
-        console.log(columnInfo.value);
       }
     }
   });

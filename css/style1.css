@@ -57,6 +57,7 @@ li {
   justify-content: center;
   padding: 2px;
   border: 1px solid #6d4140;
+  width: 100%;
 }
 
 input {
