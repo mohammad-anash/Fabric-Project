@@ -15,7 +15,7 @@ body {
 
 .container {
   height: 100%;
-  width: 450px;
+  width: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -193,4 +193,118 @@ input {
   font-size: 12px;
   margin-top: 9px;
   font-weight: 900;
+}
+
+#header {
+  padding: 1px 3px;
+  width: 100%;
+  border: 2px solid #6d4140;
+}
+
+#first-div {
+  height: 25px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+#center {
+  padding: 0;
+  border-bottom: 2px solid #6d4140;
+}
+
+#second-div {
+  width: 100%;
+}
+
+#second-div #place-name {
+  font-size: 25px;
+  font-weight: 900;
+  color: #6d4140;
+}
+
+#second-div #place-information {
+  text-transform: capitalize;
+  font-size: 13px;
+  color: grey;
+  padding: 5px 0px;
+  border-bottom: 2px solid grey;
+  border-top: 2px solid grey;
+  word-spacing: 1px;
+  font-weight: 800;
+}
+
+#second-div #place-address {
+  color: #6d4140;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+#third-div {
+  width: 100%;
+  display: flex;
+  border: 2px solid #6d4140;
+}
+
+#left-detail {
+  width: 75%;
+}
+
+#input-detail {
+  padding: 2px;
+}
+
+#input-detail::placeholder {
+  font-size: 15px;
+  font-weight: grey;
+  font-weight: 900;
+}
+
+#gstin {
+  padding: 2px;
+  font-size: 15px;
+  font-weight: 900;
+  color: grey;
+}
+
+#GSTIN-detail {
+  display: flex;
+  gap: 15px;
+}
+
+#GSTIN-detail #gstin-input {
+  display: flex;
+}
+
+#right-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#right-detail #invoice-detail {
+  text-align: center;
+}
+
+#right-detail #invoice-detail {
+  text-transform: capitalize;
+  color: grey;
+  font-weight: 800;
+}
+
+#right-detail #invoice-detail #invoice-no {
+  color: red;
+}
+
+#right-detail #date {
+  padding: 3px;
+}
+
+#right-detail #date::placeholder {
+  color: grey;
+  font-weight: 800;
+  font-size: 15px;
 }
